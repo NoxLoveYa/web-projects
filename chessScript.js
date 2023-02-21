@@ -8,6 +8,7 @@
 // @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
 // @grant        none
 // ==/UserScript==
+
 function resolveAfterXSeconds(seconds) {
   return new Promise(resolve => {
     setTimeout(() => {
@@ -71,5 +72,4 @@ function getPieces(color) {
 
     let pieces = await getPieces(color);
     console.log(pieces);
-
 })();
